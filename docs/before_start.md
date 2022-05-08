@@ -20,7 +20,7 @@ and 2xV100 (32Gb) for the cityscapes.
 
 Please note, our approach performs robust under different hardware's test. See the training logs for more details.
 
-### voc12 setting
+### VOC12 Setting
 **(global)** we utilize batch_size=64 (32 labelled, 32 unlabelled data) for the training, with learning rate 1e-2, under 4 GPUs.
 
 **(local)** in each GPU, we utilize batch_size=16 (8 labelled, 8 unlabelled data) under the learning rate 2.5e-3.
@@ -49,12 +49,12 @@ Please note, our approach performs robust under different hardware's test. See t
    run the scripts with 
    ```shell
    # -l -> labelled_num; -g -> gpus; -b -> resnet backbone;
-   ./scripts/train_voc_hq.sh -l 742 -g 2 -b 101
+   ./scripts/train_voc_hq.sh -l 732 -g 2 -b 101
    ```
 P.S., our experiments show that, the training under half of the batch_size (i.e., GPU=2xV100) are likely to perform 
 **higher** than the paper reported result. 
 
-### Cityscapes setting
+### Cityscapes Setting
 we utilize batch_size=16 (8 labelled, 8 unlabelled data) under the learning rate 4.5e-3. 
 (I have to reduce the batch size, as our dgx faced some issues in 2021 Nov. )
 
