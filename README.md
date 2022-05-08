@@ -46,7 +46,7 @@ Please follow this [***instruction***](./docs/before_start.md) document to repro
 ## Training details
 Some example training details including:
 1) VOC12 dataset can be visualized in this [wandb](https://wandb.ai/pyedog1976/PS-MT(VOC12)?workspace=user-pyedog1976) link.
-2) Cityscapes dataset can be visualized in this [wandb]https://wandb.ai/pyedog1976/PS-MT(City)?workspace=user-pyedog1976) link.
+2) Cityscapes dataset can be visualized in this [wandb](https://wandb.ai/pyedog1976/PS-MT(City)?workspace=user-pyedog1976) link.
 
 In details, after clicking the run, you can checkout:
 
