@@ -45,6 +45,5 @@ fi
 
 max_epochs=80
 
-python3 VocCode/main.py --labeled_examples="${labelled}" --gpus=${gpus} --backbone=${backbone} --warm_up=5 --batch_size=8 --semi_p_th=.6 --semi_n_th=.0 --learning_rate=2.5e-3 \
---epochs=${max_epochs} --unsup_weight=${unsup_weight}
-
+nohup python3 VocCode/main.py --labeled_examples="${labelled}" --gpus=${gpus} --backbone=${backbone} --warm_up=5 --batch_size=8 --semi_p_th=.6 --semi_n_th=.0 --learning-rate=2.5e-3 \
+--epochs=${max_epochs} --unsup_weight=${unsup_weight} > voc_hq_"${labelled}"_"${backbone}".out &
