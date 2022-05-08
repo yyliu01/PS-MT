@@ -31,14 +31,26 @@ Please note, our approach performs robust under different hardware's test. See t
    |:--------:	    |:-----:	|:-----:	|:-----:	|:-----:	|
    | epoch          | 80 	| 80 	| 200 	| 300 	|
    | weight      	| 1.5 	| 1.5 	| 1.5 	| 1.5 	|
+   
+   run the scripts with 
 
+   ```shell
+   # -l -> labelled_num; -g -> gpus; -b -> resnet backbone;
+   ./scripts/train_voc_aug.sh -l 1323 -g 2 -b 101
+   ```
+   
 2) high-quality experiment
 
    | hyper-param 	| 1/16 (92)| 1/8 (183)| 1/4 (366)| 1/2 (732)|
    |:--------:	    |:-----:	|:-----:	|:-----:	|:-----:	|
    | epoch          | 80 	| 80 	| 80 	| 80 	|
    | weight      	| 0.06 	| 0.6 	| 0.6 	| 0.6 	|
-
+   
+   run the scripts with 
+   ```shell
+   # -l -> labelled_num; -g -> gpus; -b -> resnet backbone;
+   ./scripts/train_voc_hq.sh -l 742 -g 2 -b 101
+   ```
 P.S., our experiments show that, the training under half of the batch_size (i.e., GPU=2xV100) are likely to perform 
 **higher** than the paper reported result. 
 
