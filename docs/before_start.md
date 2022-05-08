@@ -18,7 +18,7 @@ we visualize our training details via wandb (https://wandb.ai/site).
 The code is trained under 4xV100(32Gb) for the voc12 dataset, 
 and 2xV100 (32Gb) for the cityscapes. 
 
-Please note, our approach performs robust under different hardware's test. See the training logs for more details.
+Our approach performs robust under different hardware's test, please see the training logs for more details.
 
 ### VOC12 Setting
 **(global)** we utilize batch_size=64 (32 labelled, 32 unlabelled data) for the training, with learning rate 1e-2, under 4 GPUs.
