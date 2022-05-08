@@ -10,7 +10,7 @@ $ cd PS-MT
     ```shell
     $ conda env create -f ps-mt.yml
     ```
-2) install the torch 1.9.0
+2) install the torch 1.8.1
     ```shell
     $ conda activate ps-mt
     # IF cuda version < 11.0
