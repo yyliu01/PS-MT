@@ -1,0 +1,16 @@
+* These are the settings we used for the different ratio experiment (VOC) *
+
+Entire Datset Split:
+1/2 -> 5291
+1/4 -> 2646
+1/8 -> 1323
+1/16-> 662
+
+High Quality Annotation (Original From Pascal VOC):
+1464
+
+Few supervision (1465 in total):
+1/2 -> 732
+1/4 -> 366
+1/8 -> 183
+1/16-> 92 

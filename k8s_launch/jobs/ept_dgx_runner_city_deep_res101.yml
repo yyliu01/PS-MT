@@ -1,0 +1,64 @@
+# --exp_name list: co-seg[ablation], co-seg[low_quality], co-seg[high_quality], co-seg[few_supervision], co-seg[pseudo_label]
+# --data_set list: voc, city
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: city-dataset-res101
+  namespace: "your namespace"
+spec:
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: city-dataset-res101
+          image: docker.aiml.team/yuyuan.liu/exercise_1:latest
+          stdin: true
+          tty: true
+          volumeMounts:
+            - name: gcp-credentials
+              mountPath: /etc/gcp
+              readOnly: true
+            - mountPath: /dev/shm
+              name: shared-memory-hack
+              # - mountPath: "/scratch"
+              # name: gcp-credentials
+          command: 
+           [
+              "python", "CityCode/main.py",
+              "--gcloud",
+              "--nodes=1",
+              "--ddp",
+              "--dgx",
+              "--gpus=2",
+              "--learning-rate=4.5e-3",
+              "--warm_up=5",
+              "--backbone=50",
+              "--batch_size=4",
+              "--labeled_examples=744",
+              "--semi_p_th=0.6",
+              "--epochs=450",
+              # "--unsupervised_w=3.0",
+           ]
+          resources:
+            limits:
+              nvidia.com/gpu: 2
+              memory: 120Gi
+              cpu: 16000m
+            requests:
+              memory: 120Gi
+              cpu: 16000m
+          env:
+            - name: GOOGLE_APPLICATION_CREDENTIALS
+              value: /etc/gcp/credentials.json
+
+      volumes:
+        - name: gcp-credentials
+          secret:
+            secretName: gcp
+            items:
+              - key: data-manager
+                path: credentials.json
+        - name: shared-memory-hack
+          emptyDir:
+            medium: Memory
+

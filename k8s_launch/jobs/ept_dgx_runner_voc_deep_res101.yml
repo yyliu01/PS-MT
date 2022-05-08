@@ -1,0 +1,61 @@
+# --exp_name list: co-seg[ablation], co-seg[low_quality], co-seg[high_quality], co-seg[few_supervision], co-seg[pseudo_label]
+# --data_set list: voc, city
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: voc-dataset-res101
+  namespace: "your namespace"
+spec:
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: voc-dataset-res101
+          image: docker.aiml.team/yuyuan.liu/exercise_1:latest
+          stdin: true
+          tty: true
+          volumeMounts:
+            - name: gcp-credentials
+              mountPath: /etc/gcp
+              readOnly: true
+            - mountPath: /dev/shm
+              name: shared-memory-hack
+          command: 
+           [
+              "python", "VocCode/main.py",
+              "--gcloud",
+              "--nodes=1",
+              "--ddp",
+              "--gpus=4",
+              "--backbone=101",
+              "--batch_size=8",
+              "--labeled_examples=2646",
+              "--learning-rate=2.5e-3",
+              "--warm_up=5",
+              "--semi_p_th=0.6",
+              "--semi_n_th=0.",
+              "--epochs=200",
+           ]
+          resources:
+            limits:
+              nvidia.com/gpu: 4
+              memory: 80Gi14000m
+              cpu: 20000m
+            requests:
+              memory: 80Gi
+              cpu: 20000m
+          env:
+            - name: GOOGLE_APPLICATION_CREDENTIALS
+              value: /etc/gcp/credentials.json
+
+      volumes:
+        - name: gcp-credentials
+          secret:
+            secretName: gcp
+            items:
+              - key: data-manager
+                path: credentials.json
+        - name: shared-memory-hack
+          emptyDir:
+            medium: Memory
+
