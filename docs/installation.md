@@ -41,5 +41,5 @@ $ cd PS-MT
    as we follow the common setting with **19** classes.   
    
 please note, our training details (e.g., training id, input resolution, and batch size) follow the previous works
-[CPS](https://github.com/charlesCXK/TorchSemiSeg), and [PseudoSeg](https://github.com/googleinterns/wss).
+[CPS](https://github.com/charlesCXK/TorchSemiSeg) and [PseudoSeg](https://github.com/googleinterns/wss).
 
