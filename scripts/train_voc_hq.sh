@@ -13,7 +13,7 @@ helpFunction()
 while getopts "l:b:g:" opt; do
   case "$opt" in
     l ) labelled="$OPTARG"
-          if ((labelled != 92 && labelled != 183 && labelled != 366 && labelled != 732 && labelled != 1464)); then
+          if ((labelled != 92 && labelled != 183 && labelled != 366 && labelled != 732)); then
                  echo "we support the experimental setup for voc12 aug as follows:"
                  echo "
                   +-------------+-----------+-----------+-----------+-----------+
