@@ -15,7 +15,7 @@ Please install the dependencies and dataset based on this [***installation***](.
 Please follow this [***instruction***](./docs/before_start.md) document to reproduce our results.
 
 ## Results
-### Pascal VOC 12 dataset
+### Pascal VOC12 dataset
 1. augmented set 
 
     | Backbone 	| 1/16 (662)| 1/8 (1323)| 1/4 (2646)| 1/2 (5291)|
