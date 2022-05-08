@@ -9,10 +9,10 @@
 
 
 ### Installation
-Please install the dependencies and dataset based on the [installation](./docs/installation.md) document.
+Please install the dependencies and dataset based on this [***installation***](./docs/installation.md) document.
 
 ### Getting start
-Please follow this [instruction](./docs/before_start.md) document to reproduce our results.
+Please follow this [***instruction***](./docs/before_start.md) document to reproduce our results.
 
 ## Results
 ### Pascal VOC 12 dataset
