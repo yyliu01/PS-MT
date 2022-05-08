@@ -50,7 +50,7 @@ In details, after clicking the run, you can checkout:
 
 1) <img src="https://user-images.githubusercontent.com/102338056/167282405-a116af68-c5c0-46aa-8cc5-1fe2774edf0b.png" width="25" height="25"> overall information (e.g., training command line, hardware information and training time).
 2) <img src="https://user-images.githubusercontent.com/102338056/167282511-fd9e21be-9958-41fd-ac9d-b0b9814693b4.png" width="25" height="25"> training details (e.g., loss curves, validation results and visualization)
-3) <img src="https://user-images.githubusercontent.com/102338056/167282559-2e5b3d12-0d06-411b-8a23-5be810876309.png" width="25" height="25"> output logs (well, some times might crashed ...)
+3) <img src="https://user-images.githubusercontent.com/102338056/167282559-2e5b3d12-0d06-411b-8a23-5be810876309.png" width="25" height="25"> output logs (well, sometimes might crash ...)
 
 ## Acknowledgement & Citation
 The code is highly based on the [CCT](https://github.com/yassouali/CCT). Many thanks for their great work.
