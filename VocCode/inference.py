@@ -77,8 +77,6 @@ def running_inference(loader, model, folder_name, save_img=False):
         false_mask = hard_result != target.squeeze()
 
         for i in range(0, 21):
-            if i == 255:
-                continue
             idx_mask = i == target.squeeze()
             mask = idx_mask & false_mask
             num_record[i] += torch.sum(mask)
