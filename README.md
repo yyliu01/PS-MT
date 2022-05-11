@@ -51,7 +51,7 @@ Some examples of training details, including:
 In details, after clicking the run, you can checkout:
 
 1) <img src="https://user-images.githubusercontent.com/102338056/167322732-afa951fe-dc36-4daf-b894-6a6e70e974f8.png" width="25" height="25"> overall information (e.g., training command line, hardware information and training time).
-2) <img src="https://user-images.githubusercontent.com/102338056/167322770-35a069a6-5bde-4451-a841-4fcfaf58fef2.png" width="25" height="25"> training details (e.g., loss curves, validation results and visualization)
+2) <img src="https://user-images.githubusercontent.com/102338056/167849780-aed29025-1aaf-46df-a55c-57835acd0d5e.png" width="25" height="25"> training details (e.g., loss curves, validation results and visualization)
 3) <img src="https://user-images.githubusercontent.com/102338056/167322791-d992d4b0-1d4b-487b-8edf-241c7122e622.png" width="25" height="25"> output logs (well, sometimes might crash ...)
 
 ## Acknowledgement & Citation
