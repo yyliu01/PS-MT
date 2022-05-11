@@ -14,6 +14,11 @@ we visualize our training details via wandb (https://wandb.ai/site).
    import os
    os.environ['WANDB_API_KEY'] = "you key"
    ```
+
+## checkpoints
+1) for the deeplabv3+ experiments, we utilize exactly same checkpoints as provided by the [CPS](https://github.com/charlesCXK/TorchSemiSeg) in [here](https://1drv.ms/u/s!AsvBenvUFxO3hn9hIs_esxf0aLoH?e=c5cZvF).
+2) for the pspnet experiments, we follow the [CCT](https://github.com/yassouali/CCT) as provided in [here](https://1drv.ms/u/s!AsvBenvUFxO3hwCoBdieaWLzV7pp?e=a0C60K).
+  
 ## training
 The code is trained under 4xV100(32Gb) for the voc12 dataset, 
 and 2xV100 (32Gb) for the cityscapes. 
@@ -58,8 +63,13 @@ P.S., our experiments show that, the training under half of the batch_size (i.e.
 we utilize batch_size=16 (8 labelled, 8 unlabelled data) under the learning rate 4.5e-3. 
 (I have to reduce the batch size, as our dgx faced some issues in 2021 Nov. )
 
-| hyper-param 	| 1/8 (372) | 1/4 (744) | 1/2 (1488)|
-|:--------:	    |:-----:	|:-----:	|:-----:	|
-| epoch         | 320 	| 450 	| 550 	|
-| weight        | 3.0 	| 3.0	| 3.0 	|
+   | hyper-param 	| 1/8 (372) | 1/4 (744) | 1/2 (1488)|
+   |:--------:	    |:-----:	|:-----:	|:-----:	|
+   | epoch         | 320 	| 450 	| 550 	|
+   | weight        | 3.0 	| 3.0	| 3.0 	|
 
+   run the scripts with
+   ```shell
+   # -l -> labelled_num; -g -> gpus; -b -> resnet backbone;
+   ./scripts/train_voc_hq.sh -l 372 -g 2 -b 50
+   ```
