@@ -70,7 +70,7 @@ Please consider citing this project in your publications if it helps your resear
 
 #### TODO
 - [x] Code of deeplabv3+ for voc12
-- [ ] Code of deeplabv3+ for cityscapes
+- [x] Code of deeplabv3+ for cityscapes
 - [ ] Code of pspnet for voc12
 
 
