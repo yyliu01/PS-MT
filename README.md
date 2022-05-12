@@ -50,9 +50,9 @@ Some examples of training details, including:
 
 In details, after clicking the run, you can checkout:
 
-1) <img src="https://user-images.githubusercontent.com/102338056/167322732-afa951fe-dc36-4daf-b894-6a6e70e974f8.png" width="25" height="25"> overall information (e.g., training command line, hardware information and training time).
-2) <img src="https://user-images.githubusercontent.com/102338056/167849780-aed29025-1aaf-46df-a55c-57835acd0d5e.png" width="25" height="25"> training details (e.g., loss curves, validation results and visualization)
-3) <img src="https://user-images.githubusercontent.com/102338056/167322791-d992d4b0-1d4b-487b-8edf-241c7122e622.png" width="25" height="25"> output logs (well, sometimes might crash ...)
+1) <img src="https://user-images.githubusercontent.com/102338056/167979073-1c1b3144-8a72-4d8d-9084-31d7fdab3e9b.png" width="26" height="22"> overall information (e.g., training command line, hardware information and training time).
+2) <img src="https://user-images.githubusercontent.com/102338056/167978940-8c1f3d79-d062-4e7b-b56e-30b97d273ae8.png" width="26" height="22"> training details (e.g., loss curves, validation results and visualization)
+3) <img src="https://user-images.githubusercontent.com/102338056/167979238-4847430f-aa0b-483d-b735-8a10b43293a1.png" width="26" height="22"> output logs (well, sometimes might crash ...)
 
 ## Acknowledgement & Citation
 The code is highly based on the [CCT](https://github.com/yassouali/CCT). Many thanks for their great work.
