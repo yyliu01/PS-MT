@@ -39,7 +39,7 @@ spec:
           resources:
             limits:
               nvidia.com/gpu: 4
-              memory: 80Gi14000m
+              memory: 80Gi
               cpu: 20000m
             requests:
               memory: 80Gi
