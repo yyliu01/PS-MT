@@ -11,7 +11,7 @@ spec:
       restartPolicy: Never
       containers:
         - name: voc-dataset-res101
-          image: docker.aiml.team/yuyuan.liu/exercise_1:latest
+          image: "your docker image path"
           stdin: true
           tty: true
           volumeMounts:
