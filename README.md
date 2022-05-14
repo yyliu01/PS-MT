@@ -46,7 +46,7 @@ Please follow this [***instruction***](./docs/before_start.md) document to repro
 ## Training details
 Some examples of training details, including:
 1) VOC12 dataset in this [wandb](https://wandb.ai/pyedog1976/PS-MT(VOC12)?workspace=user-pyedog1976) link.
-2) Cityscapes dataset in this [wandb](https://wandb.ai/pyedog1976/PS-MT(City)?workspace=user-pyedog1976) link.
+2) Cityscapes dataset in this [wandb](https://wandb.ai/pyedog1976/PS-MT(City)?workspace=user-pyedog1976) link **(w/ 1-teacher inference)**.
 
 In details, after clicking the run, you can checkout:
 
