@@ -339,7 +339,7 @@ class Trainer(BaseTrainer):
                 total_inter, total_union = total_inter + inter, total_union + union
                 total_correct, total_label = total_correct + correct, total_label + labeled
 
-            if self.config['n_gpu'] > 1:
+            if self.args.gpus > 1:
                 total_inter = torch.tensor(total_inter, device=self.args.local_rank)
                 total_union = torch.tensor(total_union, device=self.args.local_rank)
                 total_correct = torch.tensor(total_correct, device=self.args.local_rank)
