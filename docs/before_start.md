@@ -5,12 +5,14 @@ we visualize our training details via wandb (https://wandb.ai/site).
    ```shell 
    $ wandb login
    ```
-2) you can find you API key in (https://wandb.ai/authorize)
-3) add the key to the **main.py** with
+   you can find you API key in (https://wandb.ai/authorize), and copy & paste it in terminal.
+   
+2) you can (optionally) add the key to the **main.py** for the server use, with
    ```shell
    import os
    os.environ['WANDB_API_KEY'] = "you key"
    ```
+   
 
 ## checkpoints
 1) for the deeplabv3+ experiments, we utilize exactly same checkpoints as provided by the [CPS](https://github.com/charlesCXK/TorchSemiSeg) in [here](https://1drv.ms/u/s!AsvBenvUFxO3hn9hIs_esxf0aLoH?e=c5cZvF).
