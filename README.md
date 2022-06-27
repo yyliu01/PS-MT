@@ -71,6 +71,7 @@ Please consider citing this project in your publications if it helps your resear
 #### TODO
 - [x] Code of deeplabv3+ for voc12
 - [x] Code of deeplabv3+ for cityscapes
+- [ ] Results of blender setting from current SOTA models
 - [ ] Code of pspnet for voc12
 
 
