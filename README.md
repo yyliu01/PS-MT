@@ -36,7 +36,7 @@ Please follow this [***instruction***](./docs/before_start.md) document to repro
     | 50       	| ✗	        |74.37 	    | 75.15 	| 76.02 	| 
     | 50       	| ✓	        |75.76 	    | 76.92 	| 77.64 	| 
     | 101      	| ✓	        |76.89	    | 77.60 	| 79.09 	|       
-2. following the setting of [CPS](https://arxiv.org/pdf/2106.01226.pdf) (800x800, OHEM supervised loss)
+2. following the setting of [CPS](https://arxiv.org/pdf/2106.01226.pdf) (800x800, OHEM supervised loss, w/ 1-teacher inference)
    
    | Backbone 	| slid. eval| 1/8 (372)| 1/4 (744)| 1/2 (1488)|
    |:--------:	|:-----:	|:-----:	|:-----:	|:-----:	|
