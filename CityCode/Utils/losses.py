@@ -310,9 +310,8 @@ def semi_ce_loss(inputs, targets,
         if not torch.any(mask):
             neg_prediction_prob = torch.clamp(1-F.softmax(inputs, dim=1), min=1e-7, max=1.)
             negative_loss_mat = -(neg_label * torch.log(neg_prediction_prob))
-
-            zero = torch.tensor(0., dtype=torch.float, device=negative_loss_mat.device)
-            return zero, pass_rate, negative_loss_mat[mask_neg].mean()
+            # zero = torch.tensor(0., dtype=torch.float, device=negative_loss_mat.device)
+            return inputs.sum() * .0, pass_rate, negative_loss_mat[mask_neg].mean()
         else:
             positive_loss_mat = F.cross_entropy(inputs, torch.argmax(targets, dim=1), reduction="none")
             positive_loss_mat = positive_loss_mat * weight
