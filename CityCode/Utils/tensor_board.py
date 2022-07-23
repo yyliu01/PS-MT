@@ -11,7 +11,7 @@ from Utils.helpers import DeNormalize
 
 class Tensorboard:
     def __init__(self, config, online=False):
-        os.environ['WANDB_API_KEY'] = "6cde1f75fbdf236d8e89b77d313d74b40e3d8d5f"
+        os.environ['WANDB_API_KEY'] = ""
         os.system("wandb login")
         os.system("wandb {}".format("online" if online else "offline"))
         self.tensor_board = wandb.init(project=config['name'], name=config['experim_name'],
