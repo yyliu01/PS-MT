@@ -48,7 +48,7 @@ Some examples of training details, including:
 1) VOC12 dataset in this [wandb](https://wandb.ai/pyedog1976/PS-MT(VOC12)?workspace=user-pyedog1976) link.
 2) Cityscapes dataset in this [wandb](https://wandb.ai/pyedog1976/PS-MT(City)?workspace=user-pyedog1976) link **(w/ 1-teacher inference)**.
 
-In details, after clicking the run, you can checkout:
+In details, after clicking the run (e.g., [1323_voc_rand1](https://wandb.ai/pyedog1976/PS-MT(VOC12)/runs/177s76t6?workspace=user-pyedog1976)), you can checkout:
 
 1) <img src="https://user-images.githubusercontent.com/102338056/167979073-1c1b3144-8a72-4d8d-9084-31d7fdab3e9b.png" width="26" height="22"> overall information (e.g., training command line, hardware information and training time).
 2) <img src="https://user-images.githubusercontent.com/102338056/167978940-8c1f3d79-d062-4e7b-b56e-30b97d273ae8.png" width="26" height="22"> training details (e.g., loss curves, validation results and visualization)
