@@ -23,7 +23,7 @@ Please follow this [***instruction***](./docs/before_start.md) document to repro
   
   * please note that, we update the blender splits list end with an extra 0 (e.g., 6620 for 662 labels) in [the original directory](https://github.com/yyliu01/PS-MT/tree/main/VocCode/DataLoader/voc_splits). 
   * You can find the related launching scripts in [here](https://github.com/yyliu01/PS-MT/blob/main/scripts/train_voc_blender.sh). 
-  * **In case you are using blender experiments (which based on high-quality labels), please use the numbers in this table**.
+  * **In case you are using blender experiments (which are based on high-quality labels), please compare with our results in this table**.
   
 ## Results
 ### Pascal VOC12 dataset
