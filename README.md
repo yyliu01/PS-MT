@@ -14,6 +14,17 @@ Please install the dependencies and dataset based on this [***installation***](.
 ### Getting start
 Please follow this [***instruction***](./docs/before_start.md) document to reproduce our results.
 
+## Update
+* blender setting results in VOC12 dataset (under deeplabv3+ with resnet101)
+  
+  | Approach  | 1/16 (662)| 1/8 (1323)| 1/4 (2646)| 1/2 (5291)|
+  |:--------:	|:-----:	|:-----:	|:-----:	|:-----:	|
+  | -         | -         | -         | -         | -         |
+  | PS-MT [wandb_log](https://wandb.ai/pyedog1976/blender-exps%20(u2pl)?workspace=user-pyedog1976) | 78.79     | 80.29     | 80.66     | -        |
+  
+  please note that, we update the blender splits list end with an extra 0 (e.g., 6620 for 662 labels).
+  You can find the related launching scripts in here.
+  
 ## Results
 ### Pascal VOC12 dataset
 1. augmented set 
