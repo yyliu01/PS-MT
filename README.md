@@ -19,11 +19,11 @@ Please follow this [***instruction***](./docs/before_start.md) document to repro
   
   | Approach  | 1/16 (662)| 1/8 (1323)| 1/4 (2646)| 1/2 (5291)|
   |:--------:	|:-----:	|:-----:	|:-----:	|:-----:	|
-  | PS-MT  [wandb_log](https://wandb.ai/pyedog1976/blender-exps%20(u2pl)?workspace=user-pyedog1976)    | 78.79     | 80.29     | 80.66     | 80.87        |
+  | PS-MT  [(wandb_log)](https://wandb.ai/pyedog1976/blender-exps%20(u2pl)?workspace=user-pyedog1976)    | 78.79     | 80.29     | 80.66     | 80.87        |
   
   * please note that, we update the blender splits list end with an extra 0 (e.g., 6620 for 662 labels) in [the original directory](https://github.com/yyliu01/PS-MT/tree/main/VocCode/DataLoader/voc_splits). 
-  * You can find the related launching scripts in [here](https://github.com/yyliu01/PS-MT/blob/main/scripts/train_voc_blender.sh). 
-  * **In case you are using blender experiments (which are based on high-quality labels), please compare with our results in this table**.
+  * you can find the related launching scripts in [here](https://github.com/yyliu01/PS-MT/blob/main/scripts/train_voc_blender.sh). 
+  * **In case you are using blender experiments (which are based on high-quality labels), please compare with the results in this table**.
   
 ## Results
 ### Pascal VOC12 dataset
