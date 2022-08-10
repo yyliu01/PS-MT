@@ -70,9 +70,8 @@ class EntireModel(BaseModel):
                                                             conf_mask=True, threshold=semi_p_th,
                                                             threshold_neg=semi_n_th)
 
-        confident_reg = .5 * torch.mean(F.softmax(target_ul, dim=1) ** 2)
-
         if semi_n_th > .0:
+            confident_reg = .5 * torch.mean(F.softmax(output_ul, dim=1) ** 2)
             loss_unsup += neg_loss
             loss_unsup += confident_reg
 
