@@ -1,3 +1,4 @@
+import os
 import json
 import torch
 from Utils import helpers
@@ -6,7 +7,7 @@ from torch.nn.parallel import DistributedDataParallel as DDP
 import torch.distributed as dist
 from itertools import chain
 from Utils.helpers import group_weight, init_weight
-from dgx.download_to_pvc import *
+# from dgx.download_to_pvc import *
 
 bn_eps = 1e-5
 bn_momentum = 0.1
