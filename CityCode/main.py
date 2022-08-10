@@ -1,3 +1,4 @@
+import os
 import random
 import warnings
 import argparse
@@ -6,12 +7,12 @@ from Utils.losses import *
 from DataLoader.city import City
 import torch.distributed as dist
 import torch.multiprocessing as mp
-from dgx.download_to_pvc import *
 from Utils.tensor_board import Tensorboard
 from Model.Deeplabv3_plus.EntireModel import EntireModel as model_deep
 
 from Utils.logger import *
 warnings.filterwarnings("ignore")
+# from dgx.download_to_pvc import *
 
 
 def main(gpu,  ngpus_per_node, config, args):
