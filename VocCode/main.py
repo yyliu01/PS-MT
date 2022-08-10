@@ -1,3 +1,4 @@
+import os
 import random
 import warnings
 import argparse
@@ -6,13 +7,13 @@ from Utils.losses import *
 from DataLoader.voc import VOC
 import torch.distributed as dist
 import torch.multiprocessing as mp
-from dgx.download_to_pvc import *
 from Utils.tensor_board import Tensorboard
-# from Model.PSPNet.EntireModel import EntireModel as model_psp
 from Model.Deeplabv3_plus.EntireModel import EntireModel as model_deep
 
 from Utils.logger import *
 warnings.filterwarnings("ignore")
+# from dgx.download_to_pvc import *
+# from Model.PSPNet.EntireModel import EntireModel as model_psp
 
 
 def main(gpu,  ngpus_per_node, config, args):
