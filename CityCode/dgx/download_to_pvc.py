@@ -11,8 +11,8 @@ from tqdm import tqdm
 # log = logging.getLogger(__file__)
 # log.setLevel(logging.DEBUG)
 
-bucket_namespace = "aiml-carneiro-research"
-bucket_name = "aiml-carneiro-research-data"
+bucket_namespace = ""
+bucket_name = ""
 
 
 def get_bucket(bucket_namespace: str, bucket_name: str):
@@ -34,8 +34,7 @@ def download_city_unzip(data_dir: str, prefix, pvc=False):
     else:
         print(os.system("pwd"))
         print('searching blob ...')
-        bucket = get_bucket('aiml-carneiro-research',
-                            'aiml-carneiro-research-data')
+        bucket = get_bucket('', '')
         blob = bucket.blob(prefix+bucket_prefix)
         print('downloading ...')
         path = "/pvc"  if pvc else "./"
@@ -59,7 +58,7 @@ def upload_checkpoint(local_path: str, prefix: str, checkpoint_filepath: Union[P
     print('finish uploading.')
 
 
-def download_checkpoint(checkpoint_filepath: str, prefix: str, bucket_namespace='aiml-carneiro-research', bucket_name='aiml-carneiro-research-data'):
+def download_checkpoint(checkpoint_filepath: str, prefix: str, bucket_namespace='', bucket_name=''):
     src_path = f"yy/exercise_1/{prefix}"
     dest_path = f"{checkpoint_filepath}/{prefix}"
     print('Downloading {} => {}'.format(src_path, checkpoint_filepath))
