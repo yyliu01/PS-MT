@@ -60,7 +60,7 @@ def upload_checkpoint(local_path: str, prefix: str, checkpoint_filepath: Union[P
 
 
 def download_checkpoint(checkpoint_filepath: str, prefix: str, 
-        bucket_namespace: str, bucket_name=: str):
+        bucket_namespace: str, bucket_name: str):
     src_path = f"yy/exercise_1/{prefix}"
     dest_path = f"{checkpoint_filepath}/{prefix}"
     print('Downloading {} => {}'.format(src_path, checkpoint_filepath))
