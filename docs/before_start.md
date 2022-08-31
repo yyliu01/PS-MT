@@ -55,7 +55,7 @@ Our approach performs robust under different hardware's test, please see the tra
    # -l -> labelled_num; -g -> gpus; -b -> resnet backbone;
    ./scripts/train_voc_hq.sh -l 732 -g 2 -b 101
    ```
-P.S., our experiments show that, the training under half of the batch_size (i.e., GPU=2xV100) are likely to perform 
+P.S., for 1464 high quality setting, our experiments show that, the training under half of the batch_size (i.e., GPU=2xV100) are likely to perform 
 **higher** than the paper reported result. 
 
 ### Cityscapes Setting
