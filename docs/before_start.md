@@ -70,5 +70,5 @@ we utilize batch_size=16 (8 labelled, 8 unlabelled data) under the learning rate
    run the scripts with
    ```shell
    # -l -> labelled_num; -g -> gpus; -b -> resnet backbone;
-   ../scripts/train_city.sh -l 372 -g 2 -b 50
+   ./scripts/train_city.sh -l 372 -g 2 -b 50
    ```
