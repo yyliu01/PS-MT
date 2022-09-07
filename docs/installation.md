@@ -37,7 +37,7 @@ $ cd PS-MT
         ...
     }
 ```
-3) (optional) you might need to preprocess Cityscapes dataset in [here](https://github.com/mcordts/cityscapesScripts/tree/master/cityscapesscripts/preparation),
+3) (optional) you might need to preprocess Cityscapes labels in [here](https://github.com/mcordts/cityscapesScripts/tree/master/cityscapesscripts/preparation),
    as we follow the common setting with **19** classes.   
    
 please note, our training details (e.g., training id, input resolution, and batch size) follow the previous works
