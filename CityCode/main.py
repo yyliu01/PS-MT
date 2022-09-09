@@ -185,7 +185,9 @@ if __name__ == '__main__':
     config['n_labeled_examples'] = args.labeled_examples
     config['model']['resnet'] = args.backbone
     args.world_size = args.gpus * args.nodes
-
+    
+    args.ddp = True if args.gpus > 1 else False
+    
     # we fix learning rate here in config
     # config['optimizer']['args']['lr'] = args.learning_rate
 
