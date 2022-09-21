@@ -179,6 +179,7 @@ class BaseTrainer:
         filename = os.path.join(self.checkpoint_dir, ckpt_name)
         self.logger.info('\nSaving a checkpoint: {} ...'.format(str(filename)))
         torch.save(state, filename)
+        """
         pvc_dir = os.path.join("yy", "exercise_1", self.args.architecture,
                                "resnet{}_ckpt".format(str(self.args.backbone)), "city_cvpr_final",
                                                       str(self.args.labeled_examples))
@@ -186,7 +187,8 @@ class BaseTrainer:
         upload_checkpoint(local_path=self.checkpoint_dir, prefix=pvc_dir, checkpoint_filepath=ckpt_name)
         self.logger.info("Uploading current ckpt: mIoU_{}_model.pth to {}".format(str(state['monitor_best']), 
                                                                                   pvc_dir))
-
+        """
+        
     def _get_available_devices(self, n_gpu):
         sys_gpu = torch.cuda.device_count()
         if sys_gpu == 0:
