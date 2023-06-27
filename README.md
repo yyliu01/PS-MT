@@ -82,6 +82,5 @@ Please consider citing this project in your publications if it helps your resear
 #### TODO
 - [x] Code of deeplabv3+ for voc12
 - [x] Code of deeplabv3+ for cityscapes
-- [ ] Update SOTA methods' results for blender settings.
 
 
